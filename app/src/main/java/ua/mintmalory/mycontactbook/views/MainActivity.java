@@ -26,13 +26,11 @@ import ua.mintmalory.mycontactbook.views.interfaces.IGoogleApiClientHolder;
 
 public class MainActivity extends AppCompatActivity implements IGoogleApiClientHolder,
         GoogleApiClient.OnConnectionFailedListener {
-
     public static final String SERVER_AUTH_CODE = "SERVER_AUTH_CODE";
     public static final String USER_EMAIL = "USER_EMAIL";
     public static int RC_SIGN_IN = 1;
     private GoogleApiClient googleApiClient;
     private OptionalPendingResult<GoogleSignInResult> opr;
-    private GoogleSignInAccount acct;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -86,12 +84,12 @@ public class MainActivity extends AppCompatActivity implements IGoogleApiClientH
 
     private void processSignInResult(GoogleSignInResult result) {
         if (result.isSuccess()) {
-            acct = result.getSignInAccount();
+            GoogleSignInAccount signInAccount = result.getSignInAccount();
 
             ContactBookFragment f = new ContactBookFragment();
             Bundle b = new Bundle();
-            b.putString(SERVER_AUTH_CODE, acct.getServerAuthCode());
-            b.putString(USER_EMAIL, acct.getEmail());
+            b.putString(SERVER_AUTH_CODE, signInAccount.getServerAuthCode());
+            b.putString(USER_EMAIL, signInAccount.getEmail());
             f.setArguments(b);
             showFragment(f);
         } else {

@@ -4,10 +4,9 @@ import io.realm.Realm;
 import ua.mintmalory.mycontactbook.models.dao.RealmUser;
 
 public class PersonRealmAdapter {
-    Realm realm = Realm.getDefaultInstance();
+    private Realm realm = Realm.getDefaultInstance();
 
-    public void writeOrUpdateUser(final User user){
-
+    public void writeOrUpdateUser(final User user) {
         realm.executeTransaction(new Realm.Transaction() {
             @Override
             public void execute(Realm realm) {
@@ -16,7 +15,7 @@ public class PersonRealmAdapter {
         });
     }
 
-    public User getUser(String email){
+    public User getUser(String email) {
         RealmUser realmUser = realm.where(RealmUser.class).equalTo("email", email).findFirst();
         return new User(realmUser);
     }

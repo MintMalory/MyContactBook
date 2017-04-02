@@ -7,8 +7,8 @@ import java.util.List;
 import ua.mintmalory.mycontactbook.models.dao.RealmString;
 
 
-public class Contact implements Serializable{
-    private String name ="";
+public class Contact implements Serializable {
+    private String name = "";
     private String avatarURI = "";
     private List<String> phonesNumbers = new ArrayList<>();
     private List<String> emails = new ArrayList<>();
@@ -38,7 +38,7 @@ public class Contact implements Serializable{
     }
 
     public void setPhonesNumbers(List<String> phonesNumbers) {
-        this.phonesNumbers = new ArrayList<String>();
+        this.phonesNumbers = new ArrayList<>();
         this.phonesNumbers.addAll(phonesNumbers);
     }
 
@@ -64,11 +64,11 @@ public class Contact implements Serializable{
         }
     }
 
-    public void addEmail(String newEmail){
+    public void addEmail(String newEmail) {
         emails.add(newEmail);
     }
 
-    public void addPhoneNumber(String newPhoneNumber){
+    public void addPhoneNumber(String newPhoneNumber) {
         phonesNumbers.add(newPhoneNumber);
     }
 }

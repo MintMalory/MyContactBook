@@ -51,7 +51,4 @@ public class SignInFragment extends Fragment {
         super.onDestroyView();
         unbinder.unbind();
     }
-
-
-
 }

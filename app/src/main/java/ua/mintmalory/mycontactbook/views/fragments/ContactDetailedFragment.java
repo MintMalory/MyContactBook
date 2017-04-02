@@ -19,20 +19,15 @@ import static ua.mintmalory.mycontactbook.views.adapters.ContactsAdapter.SINGLE_
 public class ContactDetailedFragment extends DialogFragment {
     @Override
     public Dialog onCreateDialog(Bundle savedInstanceState) {
-
         Contact contact = getContactInfo();
-
         AlertDialog.Builder builder = new AlertDialog.Builder(getActivity());
-
         builder.setPositiveButton(getString(R.string.btn_ok_text), null);
-
         View view = getActivity().getLayoutInflater()
                 .inflate(R.layout.fragment_detailed_contact, null);
 
         CircleImageView avatar = (CircleImageView) view.findViewById(R.id.user_avatar);
         TextView name = (TextView) view.findViewById(R.id.user_info);
         ViewGroup container = (ViewGroup) view.findViewById(R.id.container);
-
 
         if (contact != null) {
             name.setText(contact.getName());

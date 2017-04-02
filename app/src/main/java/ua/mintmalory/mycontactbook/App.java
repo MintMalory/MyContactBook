@@ -14,7 +14,7 @@ public class App extends Application {
         instance = this;
     }
 
-    public static App getInstance(){
+    public static App getInstance() {
         return instance;
     }
 

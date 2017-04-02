@@ -4,9 +4,9 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
+import ua.mintmalory.mycontactbook.models.Contact;
 import ua.mintmalory.mycontactbook.models.PeopleApiDownloader;
 import ua.mintmalory.mycontactbook.models.PersonRealmAdapter;
-import ua.mintmalory.mycontactbook.models.Contact;
 import ua.mintmalory.mycontactbook.models.User;
 import ua.mintmalory.mycontactbook.presenters.interfaces.IContactBookPresenter;
 import ua.mintmalory.mycontactbook.views.interfaces.IContactBookView;

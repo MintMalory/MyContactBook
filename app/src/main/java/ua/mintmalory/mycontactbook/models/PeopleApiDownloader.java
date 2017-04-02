@@ -27,7 +27,6 @@ public class PeopleApiDownloader {
         void onDownloaded(List<Contact> contacts);
     }
 
-
     private final String CONNECTIONS_LIST = "people/me";
     private final String REDIRECT_URL = "urn:ietf:wg:oauth:2.0:oob";
     private final String CONNECTIONS_INFO_FILTER = "person.names,person.emailAddresses,person.phoneNumbers,person.photos";
@@ -83,12 +82,6 @@ public class PeopleApiDownloader {
     }
 
     private class Downloader extends AsyncTask<Void, Void, List<Contact>> {
-
-        @Override
-        protected void onPreExecute() {
-            super.onPreExecute();
-        }
-
         @Override
         protected List<Contact> doInBackground(Void... voids) {
             List<Contact> result = new ArrayList<>();

@@ -108,8 +108,6 @@ public class ContactBookFragment extends Fragment implements IContactBookView {
         } else {
             adapter.resetItems(contacts);
         }
-
-
     }
 
     private void switchToLayout(long layoutId) {

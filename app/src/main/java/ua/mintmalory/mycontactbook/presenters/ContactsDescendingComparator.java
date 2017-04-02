@@ -5,7 +5,7 @@ import java.util.Comparator;
 import ua.mintmalory.mycontactbook.models.Contact;
 
 
-public class ContactsDescendingComparator implements Comparator<Contact> {
+class ContactsDescendingComparator implements Comparator<Contact> {
     @Override
     public int compare(Contact contact, Contact t1) {
         if (t1 != null) {

@@ -6,10 +6,6 @@ import java.util.List;
 import io.realm.RealmList;
 import io.realm.RealmObject;
 
-/**
- * Created by mintmalory on 02.04.17.
- */
-
 public class RealmContact extends RealmObject implements Serializable {
     private String name = "";
     private String avatarURI = "";
