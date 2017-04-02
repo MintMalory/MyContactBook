@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "131620421839",
+    "project_id": "firebase-mycontactbook"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:131620421839:android:6089835c6f9c79c9",
+        "android_client_info": {
+          "package_name": "ua.mintmalory.mycontactbook"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "131620421839-0pmivf8ti807umhb4eelflme6li9pdgc.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "ua.mintmalory.mycontactbook",
+            "certificate_hash": "650ce6e1eb686749892f601d40f9739a98f701b0"
+          }
+        },
+        {
+          "client_id": "131620421839-20rfus0tepsn99duvrf6cdjcv710unl7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCcC0lsAfNr4lKgR5K4NA7VoJ4YiXrytPs"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 1
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
